@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AnimeSama Stream UI</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>AnimeSama<span>+</span></h1>
+      <input id="searchInput" type="search" placeholder="Rechercher un animé..." />
+    </header>
+
+    <main>
+      <section>
+        <h2 id="viewTitle">Accueil</h2>
+        <div id="breadcrumb" class="breadcrumb"></div>
+        <div id="animeGrid" class="grid"></div>
+      </section>
+
+      <section>
+        <h2>Téléchargements</h2>
+        <div id="downloads" class="downloads"></div>
+      </section>
+    </main>
+
+    <div id="languageModal" class="modal hidden">
+      <div class="modal-content">
+        <h3>Choisir une langue</h3>
+        <p id="modalInfo"></p>
+        <div class="actions">
+          <button data-lang="VF">VF</button>
+          <button data-lang="VO">VO</button>
+          <button id="closeModal" class="ghost">Annuler</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
